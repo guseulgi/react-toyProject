@@ -30,11 +30,7 @@ export default function Header() {
             Home
           </Link>
         </MyLi>
-        <MyLi>
-          <Link to="/login" style={{ textDecoration: 'none', color: 'black' }}>
-            Login
-          </Link>
-        </MyLi>
+        <MyLi></MyLi>
         <MyLi>
           <Link to="/todo" style={{ textDecoration: 'none', color: 'black' }}>
             Todo
@@ -49,6 +45,23 @@ export default function Header() {
           <Link to="/users" style={{ textDecoration: 'none', color: 'black' }}>
             유저 리스트
           </Link>
+        </MyLi>
+        <MyLi>
+          <MyUlContainer>
+            <MyLi>
+              <Link
+                to="/login"
+                style={{ textDecoration: 'none', color: 'black' }}
+              >
+                Login
+              </Link>
+            </MyLi>
+            <MyLi>
+              <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
+                SignUp
+              </Link>
+            </MyLi>
+          </MyUlContainer>
         </MyLi>
       </MyUlContainer>
     </MyHeader>
